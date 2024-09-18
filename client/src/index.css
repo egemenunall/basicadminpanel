@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.modal-container {
+    max-height: 90vh; /* Modal'ın maksimum yüksekliği %90 olsun */
+    overflow-y: auto; /* Eğer içerik taşarsa dikey kaydırma çıksın */
+}
+
+.modal-content {
+    max-width: 100%; /* İçeriğin genişliği ekranı aşmasın */
+    max-height: 60vh; /* İçeriğin yüksekliği ekranın %60'ını aşmasın */
+    object-fit: contain; /* Resim içeriği kesilmesin, tam otursun */
+}
